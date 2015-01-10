@@ -1,4 +1,4 @@
-describe("Function Basics with Require", function () {
+describe("GetNumbers Jasmine intro tests", function () {
     'use strict';
 
     it("proves true is true", function () {
