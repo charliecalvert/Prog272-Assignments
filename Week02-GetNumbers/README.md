@@ -87,7 +87,7 @@ INFO [PhantomJS 1.9.8 (Linux)]: Connected on socket mh1x_ySCnFP6Zd3c_89W with id
 
 Your job is to get all the tests to pass. Here is an example of a successful run:
     
-```
+```bash
 grunt karma
 Running "karma:unit" (karma) task
 INFO [karma]: Karma v0.12.31 server started at http://localhost:9876/
@@ -123,7 +123,7 @@ Suppose we did something foolish like forget to add **use strict** to one of you
 
 If we were to make such a egregious blunder, this is what would happen when you ran **jshint**:
 
-```
+```bash
 grunt jshint
 Running "jshint:files" (jshint) task
 >> Report "result.xml" created.
@@ -134,7 +134,7 @@ Aborted due to warnings.
 
 If we opened up **result.xml** we would see this:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <checkstyle version="4.3">
 	<file name="Source/GetNumber.js">
