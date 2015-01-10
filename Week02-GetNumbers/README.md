@@ -31,7 +31,7 @@ Needless to say, this test passes. You could make it fail by writing this:
     
 Another test in getNumberSpec looks like this:
 
-```
+```javascript
     it("shows getOne returns one", function () {
         expect(getNumbers.getOne()).toBe(1);
     });
@@ -39,7 +39,7 @@ Another test in getNumberSpec looks like this:
 
 It expects you to provide an object called getNumbers. That object should have a method called **getOne**. The **getOne()** method should return the value 1:
 
-```
+```javascript
 var getNumbers;
 
 getNumbers = {
@@ -63,7 +63,7 @@ Then each time you want to run the tests, type this:
     
 The results should look like this:
 
-```
+```bash
 grunt karma
 Running "karma:unit" (karma) task
 INFO [karma]: Karma v0.12.31 server started at http://localhost:9876/
