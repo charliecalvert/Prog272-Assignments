@@ -25,7 +25,7 @@ character in it: 'a', 'b', 'c'. There are also [escape sequences][escs]:
 | \r        | carraige return    |
 | \"        | double quote       |
 | \'        | single quote       |
-| \\        | back slash         |
+| &#92;&#92;| back slash         |
  
 
 
