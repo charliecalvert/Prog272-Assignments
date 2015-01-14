@@ -13,7 +13,7 @@ References:
 To represent a character in JavaScript use a string with a single 
 character in it: 'a', 'b', 'c'. There are also [escape sequences][escs]:
 
-- [escs]:http://es5.github.io/x7.html#x7.8.4
+[escs]:http://es5.github.io/x7.html#x7.8.4
 
 | Character | Name               |
 |-----------|--------------------|
