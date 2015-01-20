@@ -1,6 +1,6 @@
 # Split Slice
 
-Learn about slice, split, chars.
+Learn about JavaScript String.slice, String.split, and characters.
 
 References:
 
