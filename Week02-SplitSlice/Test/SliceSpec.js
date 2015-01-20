@@ -11,7 +11,7 @@ var slices = require('../Source/Slices.js').stringSlices;
  * @description: Learn about String.slice
  * @reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
  */
-describe('Slice', function () {
+describe('Slice Spec', function () {
     'use strict';
 
     console.log(slices);
@@ -77,7 +77,7 @@ describe('Slice', function () {
         expect(result).to.equal('rainy nights');
     });
 
-    it('proves getAllButFirstAndLast returns original string if first and last are different', function () {
+    it('proves getAllButFirstAndLastIfSame returns original string if first and last are different', function () {
         var testString = '*rainy nights%';
         var result = slices.getAllButFirstAndLastIfSame(testString);
         expect(result).to.equal('*rainy nights%');
