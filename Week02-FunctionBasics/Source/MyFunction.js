@@ -1,5 +1,1 @@
-define('MyFunction', function() {
-    'use strict';
-
-
-});
+module.exports=

@@ -1,16 +1,6 @@
-describe('Require Js Test Suites', function() {
+describe('Test Suites', function() {
 	'use strict';
 	var myFunction;	
-	
-	beforeEach(function(done) {
-		// This saves the modules for use in tests. You have to use
-		// the done callback because this is asynchronous.
-		requirejs(['MyFunction'], function(mo) {
-			myFunction = mo;		
-			done();
-		});		
-	});
-
 
     describe("Function Basics with Require", function() {
     	
