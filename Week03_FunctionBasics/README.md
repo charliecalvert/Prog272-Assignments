@@ -1,7 +1,11 @@
-Testing Require.js code with Karma
-==================================
+# Function Basics
 
-# Run with:
+Make sure you perform a pull to get the most recent code. Don't forget to to type the following
+to initialize the project:
+
+    npm install
+
+To run this program type the following in the root directory for the project:
 
 	./RunMocha
 	
