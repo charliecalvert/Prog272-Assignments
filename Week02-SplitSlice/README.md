@@ -2,6 +2,8 @@
 
 Learn about JavaScript String.slice, String.split, and characters.
 
+## Before you Begin
+
 References:
 
 - [split][spl]
@@ -10,7 +12,16 @@ References:
 [spl]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 [sli]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
 
-To represent a character in JavaScript use a string with a single 
+Also be sure you have installed Mocha and chai:
+
+```
+npm install -g mocha
+npm install -g chai
+```
+
+## JavaScript Characters
+
+To represent a character in JavaScript use a string with a single
 character in it: 'a', 'b', 'c'. There are also [escape sequences][escs]:
 
 [escs]:http://es5.github.io/x7.html#x7.8.4
@@ -26,10 +37,9 @@ character in it: 'a', 'b', 'c'. There are also [escape sequences][escs]:
 | \"        | double quote       |
 | \'        | single quote       |
 | &#92;&#92;| back slash         |
- 
 
 
-## Overview 
+## Goals
 
 The goal of this assignment is to get all the tests to pass and to be
 sure jshint returns zero errors. You must:
@@ -37,7 +47,7 @@ sure jshint returns zero errors. You must:
 - Use **String.split** in each method for **Splits.js**
 - Use **String.slice** in each method for **Slices.js**
 
-As a general rule the answers in the body of a solution are a single line 
+As a general rule the answers in the body of a solution are a single line
 of code. You will also include **use strict**, so that is two lines. A
 few questions do require additional lines of code, but in general, the
 solutions are short.
@@ -48,17 +58,16 @@ To get started:
 
 	npm install
 	./RunMocha
-	
+
 You can also start the tests this way:
 
 	npm test
-	
+
 ## Turn it in
 
 Copy your version of the solution to your repository and place it in
-the root of a folder called Week02-SplitSlice. Check it in. When you 
+the root of a folder called Week02-SplitSlice. Check it in. When you
 submit the assignment be sure include the URL of your repository. It
 should look something like this:
 
 	git@bitbucket.com:lastname/lastname.git
-	
