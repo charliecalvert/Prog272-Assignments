@@ -16,7 +16,7 @@ Also be sure you have installed Mocha and chai:
 
 ```
 npm install -g mocha
-npm install chai
+npm install
 ```
 
 ## JavaScript Characters
