@@ -26,18 +26,19 @@ describe('Elvenware Simple Plain Suite', function() {
             });
     });
 
-    it('getFeetInMile', function(done) {
+    it('getFeetInMileResult', function(done) {
         request(app)
             .get('/getFeetInMile')
             .expect(200)
             .expect('Content-Type', /json/)
             .end(function(err, res){
                 if(err) throw err;
+                expect(res.body.result).toBe(5280);
                 done();
             });
     });
 
-    it('calculateFeet', function(done) {
+    it('calculateFeetResult', function(done) {
         request(app)
             .get('/calculateFeet')
             .expect(200)
@@ -48,7 +49,7 @@ describe('Elvenware Simple Plain Suite', function() {
             });
     });
 
-    it('calculateRadius', function(done) {
+    it('calculateRadiusResult', function(done) {
         request(app)
             .get('/calculateRadius')
             .expect(200)
