@@ -48,9 +48,9 @@ describe('Elvenware Simple Plain Suite', function() {
             });
     });
 
-    it('calculateRadius', function(done) {
+    it('calculateCircumference', function(done) {
         request(app)
-            .get('/calculateRadius')
+            .get('/calculateCircumference')
             .expect(200)
             .expect('Content-Type', /json/)
             .end(function(err, res){
