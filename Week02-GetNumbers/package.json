@@ -15,17 +15,21 @@
   },
   "author": "CharlieCalvert",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charliecalvert/JsObjects/issues"
+  },
   "homepage": "https://elvenware.com/charlie",
   "devDependencies": {
-    "karma": "^0.12.31",
-    "karma-chrome-launcher": "^0.1.7",
+    "grunt": "~1.0.1",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-compress": "~1.2.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
     "karma-jasmine": "^0.3.3",
-    "karma-phantomjs-launcher": "~0.1.1",
-    "karma-spec-reporter": "0.0.16",
-    "grunt": "~0.4.2",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-compress": "~0.13.0",
-    "grunt-contrib-copy": "~0.7.0",
-    "grunt-contrib-jshint": "~0.10.0"
+    "karma-phantomjs-launcher": "~1.0.0",
+    "karma-spec-reporter": "0.0.26"
   }
 }
