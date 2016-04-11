@@ -1,6 +1,4 @@
-var getNumbers;
-
-getNumbers = {
+var getNumbers = {
 
     getOne: function () {
         'use strict';
@@ -8,4 +6,4 @@ getNumbers = {
     }
 };
 
-
+module.exports = getNumbers;
