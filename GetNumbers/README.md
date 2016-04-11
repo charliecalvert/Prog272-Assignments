@@ -1,11 +1,5 @@
 # GetNumbersTest
 
-Before beginning this assignment, install phantomjs-prebuilt globally:
-
-```
-npm install -g phantomjs-prebuilt
-```
-
 This assignment is an introduction to UnitTesting with Jasmine.
 
 In this project there are two folders:
