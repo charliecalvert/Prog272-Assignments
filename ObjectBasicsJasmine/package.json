@@ -4,7 +4,7 @@
   "description": "Learn about JavaScript Objects",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --watch Test"
+    "test": "node jasmine-runner.js"
   },
   "repository": {
     "type": "git",
