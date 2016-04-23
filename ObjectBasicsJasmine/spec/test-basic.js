@@ -18,8 +18,8 @@ describe('My Object Test Suites', function() {
         });
 
         it('shows myObject is not a function object', function() {
-            var isFunction = (typeof myObject !== 'function') && (typeof myObject !== 'object');
-            expect(isFunction).toBe(false);
+            var isFunction = (typeof myObject !== 'function');
+            expect(isFunction).toBe(true);
         });
 
         it('shows myObject has three methods', function() {
