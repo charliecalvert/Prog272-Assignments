@@ -5,8 +5,7 @@
     "Charlie Calvert"
   ],
   "description": "Angular Unit Tests",
-  "keywords": [
-  ],
+  "keywords": [],
   "license": "MIT",
   "homepage": "http://www.elvenware.com",
   "ignore": [
@@ -15,5 +14,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "requirejs": "^2.3.2"
+  }
 }

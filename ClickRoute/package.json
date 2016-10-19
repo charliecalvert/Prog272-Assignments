@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "start": "DEBUG=my.application node ./bin/www"
+        "start": "nodemon ./bin/www",
+        "start-linux": "DEBUG=my.application nodemon ./bin/www"
     },
     "dependencies": {
         "express": "~4.14.0",
