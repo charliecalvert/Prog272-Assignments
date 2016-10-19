@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "karma start",
+    "test": "node jasmine-runner.js",
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
