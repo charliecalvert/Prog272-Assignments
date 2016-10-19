@@ -2,15 +2,17 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(request, response) {
-    response.render('index', {
+router.get('/', function(request, response) { 
+    'use strict';
+    response.render('index', { 
         title: 'Click Routes'
     });
 });
 
-router.get('/Item01', function(request, response) {
-    var result = {
-        "result": "Success"
+router.get('/Item01', function(request, response) { 
+    'use strict';
+    var result = { 
+        'result': 'Success'
     };
     response.send(result);
 });
