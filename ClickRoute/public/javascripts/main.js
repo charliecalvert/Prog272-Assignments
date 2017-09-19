@@ -5,7 +5,7 @@
 require.config({
     baseUrl: '.',
     paths: {
-        'jquery': 'components/jquery/dist/jquery.min',
+        'jquery': 'bower_components/jquery/dist/jquery.min',
         'ClickEvents': 'javascripts/click-events'
     }
 });

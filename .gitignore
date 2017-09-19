@@ -1,5 +1,6 @@
 node_modules
-components
+bower-components
+bower_components
 *.zip
 .metadata
 .idea
