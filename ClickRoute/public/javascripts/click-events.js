@@ -9,7 +9,9 @@ define(['jquery'], function(jquery) {
         var intro = $('#intro');
 
         function ClickEvents() {
-            $(intro).html('ClickEvents is loaded. Click the three items seen below.');
+            $(intro).html(
+                'ClickEvents is loaded. Click the three items seen below.'
+            );
             $(intro).addClass('blue');
             $(listItem).click(listClick);
         }
@@ -21,9 +23,7 @@ define(['jquery'], function(jquery) {
         };
 
         return ClickEvents;
-
-    }());
+    })();
 
     return elf.ClickEvents;
-
 });

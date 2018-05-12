@@ -5,8 +5,8 @@
 require.config({
     baseUrl: '.',
     paths: {
-        'jquery': 'bower_components/jquery/dist/jquery.min',
-        'ClickEvents': 'javascripts/click-events'
+        jquery: 'bower_components/jquery/dist/jquery.min',
+        ClickEvents: 'javascripts/click-events'
     }
 });
 
@@ -15,6 +15,6 @@ require(['jquery', 'ClickEvents'], function($, ClickEvents) {
 
     console.log('main called');
     $(document).ready(function() {
-        var clickEvents = new ClickEvents();
+        new ClickEvents();
     });
 });
