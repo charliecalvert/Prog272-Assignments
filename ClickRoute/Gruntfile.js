@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             files: ['**/*.js'],
 
             options: {
-                ignores: ['**/node_modules/**', '**/components/**'],
+                ignores: ['**/node_modules/**', '**/bower_components/**'],
                 reporter: require('jshint-stylish'),
                 strict: true,
                 jasmine: true
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
         clean: {
             yourTarget: {
-                src: ['**/node_modules/**', '**/components/**']
+                src: ['**/node_modules/**', '**/bower_components/**']
             }
         },
 
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         },
 
         jsbeautifier: {
-            files: ['**/*.js', '!**/node_modules/**', '!**/components/**'],
+            files: ['**/*.js', '!**/node_modules/**', '!**/bower_components/**'],
             options: {
                 indentSize: 4
             }
