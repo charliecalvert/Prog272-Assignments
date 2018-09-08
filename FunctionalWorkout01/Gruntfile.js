@@ -35,7 +35,7 @@ module.exports = function(grunt) {
             }
         },
 
-        jade: {
+        pug: {
             compile: {
                 options: {
                     pretty: true,
@@ -45,8 +45,8 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'spec/fixtures/fixture.html': [
-                        'views/fixture.jade',
-                        '$ELF_TEMPLATES/JadeMixins/*.jade'
+                        'views/fixture.pug',
+                        '$ELF_TEMPLATES/JadeMixins/*.pug'
                     ]
                 }
             }
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jscs');
     grunt.loadNpmTasks('grunt-jsbeautifier');
     grunt.loadNpmTasks('grunt-karma');
-    grunt.loadNpmTasks('grunt-contrib-jade');
+    grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-exec');
     grunt.registerTask('fixture', ['exec:stripExtends', 'jade', 'karma']);
     grunt.registerTask('beautify', ['jsbeautifier']);
