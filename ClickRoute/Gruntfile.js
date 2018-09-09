@@ -28,8 +28,12 @@ module.exports = function(grunt) {
             }
         },
 
-        jsbeautifier: {
-            files: ['**/*.js', '!**/node_modules/**', '!**/bower_components/**'],
+        prettier: {
+            files: [
+                '**/*.js',
+                '!**/node_modules/**',
+                '!**/bower_components/**'
+            ],
             options: {
                 indentSize: 4
             }
@@ -39,15 +43,23 @@ module.exports = function(grunt) {
             karma: {
                 configFile: 'karma.conf.js'
             }
+        },
+
+        exec: {
+            pretty: {
+                cmd: './prettier'
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-jscs');
-    grunt.loadNpmTasks('grunt-jsbeautifier');
+    grunt.loadNpmTasks('grunt-prettier');
     grunt.loadNpmTasks('grunt-karma');
-    grunt.registerTask('beautify', ['jsbeautifier']);
-    grunt.registerTask('check', ['beautify', 'jscs', 'jshint']);
+    grunt.loadNpmTasks('grunt-exec');
+    //grunt.registerTask('pretty', ['pretty']);
+    grunt.registerTask('pretty', ['exec:pretty']);
+    grunt.registerTask('check', ['pretty', 'jscs', 'jshint']);
     grunt.registerTask('test', ['jshint', 'karma']);
 };
