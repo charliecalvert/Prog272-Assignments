@@ -5,7 +5,7 @@ define('ClickEvents', ['jquery'], function($) {
     elf.run = {};
 
     elf.ClickEvents = (function() {
-        var listItem = $('.listItem');
+        const listItem = $('.listItem');
         var intro = $('#intro');
 
         function ClickEvents() {
