@@ -15,7 +15,7 @@
         "*.js": [
             "eslint --fix",
             "git add",
-            "npm run husky"
+            "husky"
         ]
     },
     "dependencies": {
