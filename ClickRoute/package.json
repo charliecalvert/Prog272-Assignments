@@ -6,7 +6,7 @@
         "start": "nodemon ./bin/www",
         "start-linux": "DEBUG=my.application nodemon ./bin/www",
         "test": "karma start",
-        "precommit": "npm run lint-staged",
+        "precommit": ["npm run lint-staged husky"],
         "husky": "npm test",
         "husky-precommit": "npm test",
         "lint-staged": "lint-staged"
@@ -14,8 +14,7 @@
     "lint-staged": {
         "*.js": [
             "eslint --fix",
-            "git add",
-            "karma --start"
+            "git add"
         ]
     },
     "dependencies": {

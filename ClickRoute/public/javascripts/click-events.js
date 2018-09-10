@@ -9,8 +9,7 @@ define('ClickEvents', ['jquery'], function($) {
         const intro = document.getElementById('#intro');
 
         function ClickEvents() {
-            $(intro).html(
-                'ClickEvents is loaded. Click the three items seen below.'
+            $(intro).html('ClickEvents is loaded. Click the three items seen below.'
             );
             $(intro).addClass('blue');
             $(listItem[0]).click(listClick);
