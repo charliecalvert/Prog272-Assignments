@@ -14,8 +14,7 @@
     "lint-staged": {
         "*.js": [
             "eslint --fix",
-            "git add",
-            "husky"
+            "git add"
         ]
     },
     "dependencies": {
