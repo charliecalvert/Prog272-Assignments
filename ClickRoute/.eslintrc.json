@@ -1,7 +1,6 @@
 {
     "extends": [
-		"eslint:recommended",
-		"plugin:react/recommended"
+		"eslint:recommended"
 	],
     "rules": {
         // enable additional rules
@@ -29,6 +28,7 @@
         "browser": true,
         "node": true,
         "jest": true,
-        "es6": true
+        "es6": true,
+        "amd": true
     }
 }
