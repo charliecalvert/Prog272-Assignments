@@ -6,7 +6,7 @@
         "start": "nodemon ./bin/www",
         "start-linux": "DEBUG=my.application nodemon ./bin/www",
         "test": "karma start",
-        "precommit": "npm lint-staged",
+        "precommit": "npm run lint-staged",
         "husky": "npm test",
         "husky-precommit": "npm test",
         "lint-staged": "lint-staged"
@@ -14,7 +14,8 @@
     "lint-staged": {
         "*.js": [
             "eslint --fix",
-            "git add"
+            "git add",
+            "npm run husky"
         ]
     },
     "dependencies": {
@@ -36,7 +37,7 @@
         "grunt-jscs": "^3.0.1",
         "grunt-karma": "^3.0.0",
         "grunt-shell": "^2.1.0",
-        "husky": "^0.14.3",
+        "husky": "^1.0.0-rc.13",
         "jasmine-core": "^3.2.1",
         "jshint-stylish": "^2.2.1",
         "karma": "~3.0.0",
