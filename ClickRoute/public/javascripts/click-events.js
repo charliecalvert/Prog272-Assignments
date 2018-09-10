@@ -5,7 +5,7 @@ define('ClickEvents', ['jquery'], function($) {
     elf.run = {};
 
     elf.ClickEvents = (function() {
-        const listItem = $('.listItem');
+        const listItem = document.getElementsByClassName('.listItem');
         const intro = document.getElementById('#intro');
 
         function ClickEvents() {
@@ -13,7 +13,7 @@ define('ClickEvents', ['jquery'], function($) {
                 'ClickEvents is loaded. Click the three items seen below.'
             );
             $(intro).addClass('blue');
-            $(listItem).click(listClick);
+            $(listItem[0]).click(listClick);
         }
 
         var listClick = function(event) {
