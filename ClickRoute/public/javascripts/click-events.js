@@ -1,4 +1,4 @@
-define(['jquery'], function($) {
+define('ClickEvents', ['jquery'], function($) {
     'use strict';
 
     var elf = {};
