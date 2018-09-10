@@ -17,8 +17,8 @@ define('ClickEvents', ['jquery'], function($) {
         }
 
         var listClick = function(event) {
-            var clickText = event.target.innerText;
-            var prompt = 'You clicked: ';
+            const clickText = event.target.innerText;
+            const prompt = 'You clicked: ';
             $(intro).html(prompt + clickText);
         };
 
