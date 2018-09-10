@@ -12,7 +12,8 @@
         "husky": "npm test",
         "husky-precommit": "npm test",
         "lint-staged": "lint-staged",
-        "foo": "npm test && lint-staged"
+        "pretty": "./prettier",
+        "foo": "npm run pretty && lint-staged && npm test"
     },
     "lint-staged": {
         "*.js": [
