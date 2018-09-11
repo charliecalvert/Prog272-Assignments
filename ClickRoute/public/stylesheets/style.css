@@ -1,16 +1,38 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
 }
 
-#blue {
-  color: #0000FF;
+.blue {
+    color: #0000FF;
+}
+
+.listItem {
+    color: green;
+    font-size: 35px;
+    padding: 20px;
+    margin: 1px;
+
+}
+
+.bark {
+    border: green thick solid;
+    border-radius: 15px;
+    padding: 12px;
+    background-color: #71dd8a;
+}
+
+#pick {
+    color: #FF0000;
+    font-weight: bold;
 }
 
 .short {
-  width: 600px;
+    width: 600px;
 }
+
+
