@@ -13,7 +13,6 @@ module.exports = function(config) {
         frameworks: ['jasmine'],
 
         files: [
-            'public/bower_components/jquery/dist/jquery.min.js',
             'public/bower_components/requirejs/require.js',
             'public/javascripts/*.js',
             'spec/test*.js'
