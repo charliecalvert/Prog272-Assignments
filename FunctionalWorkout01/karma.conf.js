@@ -3,6 +3,9 @@
 module.exports = function(config) {
     'use strict';
 
+    var puppeteer = require('puppeteer');
+    process.env.CHROME_BIN = puppeteer.executablePath();
+
     config.set({
         // base path, that will be used to resolve files and exclude
         basePath: './',
@@ -10,7 +13,7 @@ module.exports = function(config) {
         frameworks: ['jasmine'],
 
         files: [
-            'public/components/jquery/dist/jquery.min.js',
+            'public/bower_components/jquery/dist/jquery.min.js',
             'node_modules/jasmine-jquery/lib/*.js',
             'public/javascripts/*.js',
             'spec/**/*.html',
@@ -40,18 +43,18 @@ module.exports = function(config) {
         autoWatch: true,
 
         // Start these browsers, currently available:
-        browsers: ['PhantomJS'],
+        browsers: ['ChromeHeadless'],
 
         // If browser does not capture in given timeout [ms], kill it
         captureTimeout: 20000,
 
         // Set to false to watch files for changes
-        singleRun: false,
+        singleRun: true,
 
         plugins: [
             'karma-jasmine',
             'karma-spec-reporter',
-            'karma-phantomjs-launcher'
+            'karma-chrome-launcher'
         ]
     });
 };

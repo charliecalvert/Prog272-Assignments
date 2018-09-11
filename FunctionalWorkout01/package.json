@@ -1,36 +1,50 @@
 {
-  "name": "FunctionalWorkout01",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "test": "karma start",
-    "start": "nodemon ./bin/www"
-  },
-  "dependencies": {
-    "body-parser": "~1.18.3",
-    "cookie-parser": "~1.4.3",
-    "debug": "~3.1.0",
-    "express": "~4.16.3",
-    "morgan": "~1.9.0",
-    "pug": "^2.0.3",
-    "serve-favicon": "~2.5.0"
-  },
-  "devDependencies": {
-    "grunt": "~1.0.3",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-jshint": "~1.1.0",
-    "grunt-contrib-pug": "^2.0.0",
-    "grunt-exec": "^3.0.0",
-    "grunt-jsbeautifier": "^0.2.13",
-    "grunt-jscs": "^3.0.1",
-    "grunt-karma": "^3.0.0",
-    "jasmine-core": "^3.2.1",
-    "jasmine-jquery": "^2.1.1",
-    "jshint-stylish": "^2.2.1",
-    "karma": "~3.0.0",
-    "karma-jasmine": "~1.1.2",
-    "karma-phantomjs-launcher": "~1.0.4",
-    "karma-spec-reporter": "0.0.32",
-    "phantomjs": "^2.1.7"
-  }
+    "name": "functional-workout01",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "test": "karma start",
+        "start": "nodemon ./bin/www",
+        "precommit": [
+            "npm run foo"
+        ],
+        "husky": "npm test",
+        "lint-staged": "lint-staged",
+        "pretty": "./prettier",
+        "foo": "npm run pretty && lint-staged && npm test"
+    },
+    "lint-staged": {
+        "*.js": [
+            "eslint --fix",
+            "git add"
+        ]
+    },
+    "dependencies": {
+        "body-parser": "~1.18.3",
+        "cookie-parser": "~1.4.3",
+        "debug": "~3.1.0",
+        "express": "~4.16.3",
+        "morgan": "~1.9.0",
+        "pug": "^2.0.3",
+        "serve-favicon": "~2.5.0"
+    },
+    "devDependencies": {
+        "grunt": "~1.0.3",
+        "grunt-contrib-clean": "^1.1.0",
+        "grunt-contrib-jshint": "~1.1.0",
+        "grunt-contrib-pug": "^2.0.0",
+        "grunt-exec": "^3.0.0",
+        "grunt-jsbeautifier": "^0.2.13",
+        "grunt-karma": "^3.0.0",
+        "husky": "^0.14.3",
+        "jasmine-core": "^3.2.1",
+        "jasmine-jquery": "^2.1.1",
+        "jshint-stylish": "^2.2.1",
+        "karma": "~3.0.0",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-jasmine": "~1.1.2",
+        "karma-spec-reporter": "0.0.32",
+        "lint-staged": "^7.2.2",
+        "puppeteer": "^1.8.0"
+    }
 }
