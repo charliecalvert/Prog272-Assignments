@@ -7,13 +7,13 @@
         "start-linux": "DEBUG=my.application nodemon ./bin/www",
         "test": "karma start",
         "precommit": [
-            "npm run foo"
+            "npm run test-all"
         ],
         "husky": "npm test",
         "husky-precommit": "npm test",
         "lint-staged": "lint-staged",
         "pretty": "./prettier",
-        "foo": "npm run pretty && lint-staged && npm test"
+        "test-all": "npm run pretty && lint-staged && npm test"
     },
     "lint-staged": {
         "*.js": [
