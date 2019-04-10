@@ -23,28 +23,28 @@
     },
     "dependencies": {
         "body-parser": "~1.18.3",
-        "cookie-parser": "~1.4.3",
-        "debug": "~3.1.0",
+        "cookie-parser": "~1.4.4",
+        "debug": "~4.1.1",
         "domready": "^1.0.8",
-        "express": "~4.16.3",
-        "grunt-prettier": "^1.0.1",
-        "morgan": "~1.9.0",
+        "express": "~4.16.4",
+        "grunt-prettier": "^1.2.0",
+        "morgan": "~1.9.1",
         "pug": "^2.0.3",
         "serve-favicon": "~2.5.0"
     },
     "devDependencies": {
-        "grunt": "~1.0.3",
+        "grunt": "~1.0.4",
         "grunt-contrib-clean": "^2.0.0",
-        "grunt-karma": "^3.0.0",
-        "grunt-shell": "^2.1.0",
-        "husky": "^1.0.0-rc.13",
-        "jasmine-core": "^3.2.1",
+        "grunt-karma": "^3.0.2",
+        "grunt-shell": "^3.0.1",
+        "husky": "^1.3.1",
+        "jasmine-core": "^3.4.0",
         "jshint-stylish": "^2.2.1",
-        "karma": "~3.0.0",
+        "karma": "~4.0.1",
         "karma-chrome-launcher": "^2.2.0",
-        "karma-jasmine": "~1.1.2",
+        "karma-jasmine": "~2.0.1",
         "karma-spec-reporter": "~0.0.32",
-        "lint-staged": "^7.2.2",
-        "puppeteer": "^1.8.0"
+        "lint-staged": "^8.1.5",
+        "puppeteer": "^1.14.0"
     }
 }
