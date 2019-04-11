@@ -43,10 +43,5 @@
     "karma-spec-reporter": "~0.0.32",
     "lint-staged": "^8.1.5",
     "puppeteer": "^1.14.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test-all"
-    }
   }
 }

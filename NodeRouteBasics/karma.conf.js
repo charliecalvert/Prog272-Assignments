@@ -40,7 +40,7 @@ module.exports = function(config) {
         autoWatch: true,
 
         // Start these browsers, currently available:
-        browsers: ['PhantomJS'],
+        browsers: ['ChromeHeadless'],
 
         // If browser does not capture in given timeout [ms], kill it
         captureTimeout: 20000,
@@ -50,7 +50,7 @@ module.exports = function(config) {
 
         plugins: ['karma-jasmine',
             'karma-spec-reporter',
-            'karma-phantomjs-launcher'
+            'karma-chrome-launcher'
         ]
 
     });
