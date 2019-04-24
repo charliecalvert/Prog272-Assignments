@@ -1,2 +1,3 @@
-$(document).ready(function() { 'use strict'; 
-});
+window.onload = {};
+
+// $(document).ready(function() { 'use strict'; });
