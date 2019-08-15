@@ -4,12 +4,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: '<json:package.json>',
 
-        clean: {
-            yourTarget: {
-                src: ['**/node_modules/**', '**/components/**']
-            }
-        },
-
         pug: {
             compile: {
                 options: {
@@ -42,10 +36,9 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-exec');
-    grunt.registerTask('fixture', ['exec:stripExtends', 'jade', 'karma']);
+    grunt.registerTask('fixture', ['exec:stripExtends', 'pug', 'karma']);
     grunt.registerTask('test', ['karma']);
 };
